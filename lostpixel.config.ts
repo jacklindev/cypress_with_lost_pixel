@@ -5,5 +5,7 @@ export const config: CustomProjectConfig = {
     currentShotsPath: "./cypress/screenshots",
   },
   generateOnly: true,
-  failOnDifference: true
+  failOnDifference: true,
+  lostPixelProjectId: 'cm13pwabt3j0mim93fms5h6m6',
+  apiKey: process.env.LOST_PIXEL_API_KEY,
 };
