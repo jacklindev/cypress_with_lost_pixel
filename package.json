@@ -60,6 +60,7 @@
   },
   "homepage": "https://github.com/cypress-io/cypress-example-kitchensink#readme",
   "dependencies": {
+    "lost-pixel": "3.18.2",
     "npm-run-all2": "^5.0.0",
     "serve": "14.2.3"
   },

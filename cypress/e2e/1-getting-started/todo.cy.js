@@ -77,6 +77,9 @@ describe('example to-do app', () => {
     cy.contains('Pay electric bill')
       .parents('li')
       .should('have.class', 'completed')
+
+    cy.screenshot('todo-1')
+
   })
 
   context('with a checked task', () => {
@@ -106,6 +109,7 @@ describe('example to-do app', () => {
       // For good measure, let's also assert that the task we checked off
       // does not exist on the page.
       cy.contains('Pay electric bill').should('not.exist')
+      cy.screenshot('todo-2')
     })
 
     it('can filter for completed tasks', () => {
@@ -138,6 +142,8 @@ describe('example to-do app', () => {
 
       // Finally, make sure that the clear button no longer exists.
       cy.contains('Clear completed').should('not.exist')
+
+      cy.screenshot('todo-3')
     })
   })
 })
